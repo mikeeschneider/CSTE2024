@@ -6,22 +6,22 @@ $folders = "Z:\eCR Storage Folder\2024-03-12",
 $WD = "C:\Users\user\Downloads"
 
 # $expand_folder is where the compressed file will be unzipped
-$expand_folder = -join($WD,"\","CSTE2024\Working Folders\expand_folder")
+$expand_folder = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\expand_folder")
 
 # $transform_folder is where the XSL transformation of the eCR will land
-$transform_folder = -join($WD,"\","CSTE2024\Working Folders\transform_folder")
+$transform_folder = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\transform_folder")
 
 # $output_folder is where the csv output file will be saved
-$output_folder = -join($WD,"\","CSTE2024\Working Folders\output_folder")
+$output_folder = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\output_folder")
 
 # $XSLT_file is the path to the XSL file used
-$XSLT_file = -join($WD,"\","CSTE2024\Script Folders\Reportable Conditions from RR_State Specific\Reportable Conditions from RR_State Specific_XSL.xsl")
+$XSLT_file = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Script Folders\Reportable Conditions from RR_State Specific\Reportable Conditions from RR_State Specific_XSL.xsl")
 
 # Name the csv file below. Extension, ".csv", not needed.
 $csv_name = "CSV file name"
 
 # $wavFile is the sound/alarm noise you want to play when the script is done.
-$wavFile = -join($WD,"\","CSTE2024\Sounds\Alarm09.wav")
+$wavFile = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Sounds\soundfile.wav")
 
 ## Things you don't need to edit
 $expand_folder_xml = (-join( $expand_folder,"\*.xml"))
