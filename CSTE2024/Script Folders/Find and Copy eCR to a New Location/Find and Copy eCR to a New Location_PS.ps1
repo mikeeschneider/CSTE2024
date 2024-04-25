@@ -2,7 +2,7 @@
 $WD = "C:\Users\user\Downloads"
 
 # $DestinationFolder is the location the zipped folder should be copied.
-$DestinationFolder = -join($WD,"\","CSTE2024\Working Folders\output_folder\Search and Find Zips")
+$DestinationFolder = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\output_folder\Search and Find Zips")
 
 # $wavFile is the sound/alarm noise you want to play when the script is done.
 $wavFile = -join($WD,"\","CSTE2024\Sounds\Alarm09.wav")
