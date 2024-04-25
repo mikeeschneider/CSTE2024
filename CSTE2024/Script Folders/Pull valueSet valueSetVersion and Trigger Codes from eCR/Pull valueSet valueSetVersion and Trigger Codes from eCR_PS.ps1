@@ -7,19 +7,19 @@ $folders = "Z:\eCR Storage Folder\2024-03-12",
 $WD = "C:\Users\user\Downloads"
 
 # $expand_folder is where the compressed file will be unzipped
-$expand_folder = -join($WD,"\","CSTE2024\Working Folders\expand_folder")
+$expand_folder = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\expand_folder")
 
 # $transform_folder is where the XSL transformation of the eCR will land
-$transform_folder_Valueset = -join($WD,"\","CSTE2024\Working Folders\transform_folder\transform_folder_valueSet_script")
+$transform_folder_Valueset = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\transform_folder\transform_folder_valueSet_script")
 
 # $output_folder is where the csv output file will be saved
-$output_folder = -join($WD,"\","CSTE2024\Working Folders\output_folder")
+$output_folder = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Working Folders\output_folder")
 
 # $XSLT_file is the path to the XSL file used
-$XSLT_file_Valueset = -join($WD,"\","CSTE2024\Script Folders\Pull valueSet valueSetVersion and Trigger Codes from eCR\Pull valueSet valueSetVersion and Trigger Codes from eCR_XSL.xsl")
+$XSLT_file_Valueset = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Script Folders\Pull valueSet valueSetVersion and Trigger Codes from eCR\Pull valueSet valueSetVersion and Trigger Codes from eCR_XSL.xsl")
 
 # $wavFile is the sound/alarm noise you want to play when the script is done.
-$wavFile = -join($WD,"\","CSTE2024\Sounds\Alarm09.wav")
+$wavFile = -join($WD,"\","CSTE2024-main\CSTE2024-main\CSTE2024\Sounds\soundfile.wav")
 
 ## Things you don't need to edit
 $expand_folder_xml = (-join( $expand_folder,"\*.xml"))
@@ -63,9 +63,9 @@ Remove-Item $expand_folder_html
         }
 
 
-        # -Filter "*.zip" 
-        # -Filter "1.2.840.114350.1.13.333*"
-        # -Exclude "1.2.840.114350.1.13*"
+        # -Filter "*.zip" ### Will filter only for zipped folders
+        # -Filter "1.2.840.114350.1.13.333*" ### Will filter for a specific folder/file name
+        # -Exclude "1.2.840.114350.1.13*" ### Will exclude specific folder/file name
 
 
 # Below code will remove all files with an xml extension from the $transform_folder.
