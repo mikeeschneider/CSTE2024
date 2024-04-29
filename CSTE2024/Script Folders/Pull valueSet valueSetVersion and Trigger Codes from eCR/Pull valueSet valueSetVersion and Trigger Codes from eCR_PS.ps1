@@ -38,7 +38,9 @@ $rawfileECR = Get-ChildItem -Path $expand_folder -Filter "*CR.xml" -Name
 
 # Get eCR Document ID and create new file name
 $ECR = [XML](Get-Content (-join( $expand_folder,"\", $rawfileECR))) 
-$NameECR = $ECR.ClinicalDocument.id.root+"_ECR"+".xml"
+$ecrIdRoot = $ECR.ClinicalDocument.id.root
+$ecrIdExt = $ECR.ClinicalDocument.id.extension
+$NameECR = (-join( $ecrIdRoot,$ecrIdExt,"_ECR",".xml"))
 
 # Rename file
 Rename-Item -NewName $NameECR -Path (-join( $expand_folder,"\", $rawfileECR))
